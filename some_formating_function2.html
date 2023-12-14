@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+
+        <h1 id="res"></h1>
+    </head>
+
+    <body>
+       <button onclick="pop()">POP</button>
+       <button onclick="push()">PUSH</button>
+       <button onclick="slice()">slice</button>
+       <button onclick="reverse()">reverse</button>
+       <button onclick="shift()">shift</button>
+       
+    </body>
+
+    
+        <script type="text/javascript">
+          var fruits=["Mango","Apple","Pineapple","Banana"];
+          var demo=fruits;
+          document.getElementById('res').innerText=demo;
+          
+          function pop(){
+            demo.pop();
+            document.getElementById('res').innerText=demo;
+          }
+
+          function push(){
+
+            var x=prompt("Please Enter a fruit","");
+            demo.push(x);
+            document.getElementById("res").innerText=demo;
+          }
+
+          function slice(){
+            var x=demo.slice(1);
+            document.getElementById("res").innerText=x;
+          }
+
+          function reverse(){
+            var x=demo.reverse();
+            document.getElementById("res").innerText=x;
+          }
+
+          function shift(){
+            var x=demo.shift();
+            document.getElementById("res").innerText=x;
+          }
+        </script>
+    
+</html>

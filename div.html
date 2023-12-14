@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Div </title>
+        <style>
+            .main{
+                width: 400px;
+                height: 200px;
+                background-color: beige;
+            }
+
+            #parent-row1{
+                width: 400px;
+                height: 200px;
+                background-color: rgb(139, 211, 216);
+            }
+
+            .col1{
+                width: 200px;
+                height: 200px;
+                background-color: rgb(165, 237, 99);
+                float: left;
+            }
+            .col2{
+                width: 200px;
+                height: 200px;
+                background-color: rgb(30, 27, 209);
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main"><!--Main div-->
+            <div id="parent-row1"><!--Parent row 1-->
+                <div class="col1">Home</div> <!--col1-->
+                <div class="col2">About</div><!--col2-->
+            </div>
+
+            <div><!--Parent row 2-->
+                <div class="col1">Gallery</div> <!--col1-->
+                <div class="col2">Contact</div><!--col2-->
+            </div>
+        </div>
+        
+    </body>
+</html>

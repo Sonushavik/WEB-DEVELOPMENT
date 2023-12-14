@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+
+    <body>
+       <h1 id="res"></h1>
+       <button onclick="getDate()">Date</button>
+       <button onclick="year()">year</button>
+       <button onclick="month()">Month</button>
+       <button onclick="hour()">Hour</button>
+       <button onclick="ToDAte()">Date</button>
+       <button onclick="day()">WeekDay</button>
+       <button onclick="minute()">Minute</button>
+       <button onclick="sec()">Second</button>
+
+    </body>
+
+    
+        <script type="text/javascript">
+            var date= new Date();
+            function getDate(){
+                document.getElementById('res').innerText=date;
+            }
+
+            function year(){
+                document.getElementById('res').innerText=date.getFullYear();
+            }
+
+            function month(){
+                var month=["january","February","March","April","May","June","July","August","sepetember","October","November","December"];
+                document.getElementById('res').innerText=month[date.getMonth()];
+            }
+
+            function hour(){
+                document.getElementById('res').innerText=date.getHours();
+            }
+          
+            function ToDAte(){
+                document.getElementById('res').innerText=date.getDate();
+            }
+
+            function day(){
+                document.getElementById('res').innerText=date.getDay();
+            }
+
+            function minute(){
+                document.getElementById('res').innerText=date.getMinutes();
+            }
+
+            function sec(){
+                document.getElementById('res').innerText=date.getSeconds();
+            }
+        </script>
+    
+</html>

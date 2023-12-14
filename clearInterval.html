@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+
+    <body>
+       <h1 id="h1"></h1>
+       <br>
+       <button onclick="stop()">stop</button>
+    </body>
+
+    
+        <script type="text/javascript">
+          var my=setInterval(count,1000);
+          var c=0;
+          function count(){
+            document.getElementById('h1').innerText=c
+            c++;
+          }
+
+          function stop(){
+            clearInterval(my);
+          }
+        </script>
+    
+</html>

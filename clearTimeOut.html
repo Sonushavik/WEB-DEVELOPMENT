@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+
+    <script type="text/javascript">
+
+        var my;
+        function start(){
+            my=setTimeout(
+                function(){
+                document.write("Welcome to SS Blogs");
+            },
+            5000
+            );
+            
+        }
+
+        function stop(){
+            clearTimeout(my);
+            alert("Timeout");
+        }
+    </script>
+
+    <body>
+       <button onclick="start()">start</button>
+       <button onclick="stop()">stop</button>
+    </body>
+
+    
+        
+    
+</html>

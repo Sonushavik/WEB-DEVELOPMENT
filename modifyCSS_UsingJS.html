@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css using js</title>
+        <style>
+            #main{
+                color: red;
+                font-size:70px;
+                text-align: center;
+                margin-top: 50px;
+                cursor: pointer;
+                transition: 2s;
+            }
+        </style>
+    </head>
+
+    <body>
+       <div id="main" onmouseenter="modify()" onmouseleave="unmodify()">
+        Welcome to SS Blogs
+       </div>
+    </body>
+
+    
+        <script type="text/javascript">
+          function modify(){
+            document.getElementById('main').style.fontSize="50px";
+            document.getElementById('main').style.color="blue";
+            document.getElementById('main').style.fontFamily="verdana";
+          }
+
+          function unmodify(){
+            document.getElementById('main').style.fontSize="70px";
+            document.getElementById('main').style.color="red";
+            document.getElementById('main').style.fontFamily="";
+          }
+
+        </script>
+    
+</html>

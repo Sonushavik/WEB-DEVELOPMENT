@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animation</title>
+
+        <style>
+            .main{
+                width: 700px;
+                height: 200px;
+                border: 2px black solid;
+                margin: 50px auto;
+                position: relative;
+                
+            }
+
+            .box{
+                width: 20 0px;
+                height: 150px;
+                margin-top: 22px;
+                background: yellow;
+                animation: box 4s;
+                position: absolute;
+                animation-timing-function: ease-in-out;
+            }
+            @keyframes box{
+                from{
+                    left: 0px;
+                }
+                to{
+                    left: 500PX;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="box">
+
+            </div>
+        </div>
+    </body>
+</html>
